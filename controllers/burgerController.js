@@ -17,7 +17,8 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-  cat.create([
+  req.body.devour=false
+  burger.create([
     "name", "devour"
   ], [
     req.body.name, req.body.devour
@@ -31,7 +32,7 @@ router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
-
+  req.body.devour= true
   burger.update({
     devour: req.body.devour
   }, condition, function(result) {

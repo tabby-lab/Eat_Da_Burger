@@ -2,7 +2,7 @@
 $(function() {
   $(".change-devour").on("click", function(event) {
     var id = $(this).data("id");
-    var newDevour = $(this).data("newdevour");
+    var newDevour = $(this).attr("data-newdevour");
 
     var newDevourState = {
       devour: newDevour
@@ -21,13 +21,13 @@ $(function() {
     );
   });
 
-  $(".create-form").on("submit", function(event) {
+  $("#addBurger").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
     var newBurger = {
-      name: $("#ca").val().trim(),
-      devour: $("[name=devour]:checked").val().trim()
+      name: $("#burger").val().trim(),
+      devour: false
     };
 
     // Send the POST request.

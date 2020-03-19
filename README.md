@@ -28,8 +28,8 @@ node server.js
 ![IMG](public/assets/images/screenshot.png)
 
 # Links
-https://github.com/tabby-lab/Eat_Da_Burger
-https://obscure-reaches-22869.herokuapp.com/
+* https://github.com/tabby-lab/
+* https://obscure-reaches-22869.herokuapp.com/
 
 # License
 No license required. These are public pages.

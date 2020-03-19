@@ -25,21 +25,38 @@ li {
 }
 
 #leftside {
-  background-color: #5c5c5c;
-  color: white;
+  background-color:indigo;
+  color:limegreen;
   text-align: center;
   font-size: 1.3em;
   float: left;
   height:50%;
   width:50%;
+  margin-top: 10%;
 }
 
 #rightside {
-  background-color: #e49322;
-  color: white;
+  background-color: indigo;
+  color: limegreen;
   text-align: center;
   font-size: 1.3em;
   float:right;
   height:50%;
   width:50%;
+  margin-top: 10%;
+}
+
+h1{
+  color:indigo;
+  background-color: lawngreen;
+  text-align: center;
+}
+
+.new-burger{
+  height:20%;
+  width:20%;
+  background-color: limegreen;
+  text-align: center;
+  justify-content: center;
+  margin-left:40%;
 }

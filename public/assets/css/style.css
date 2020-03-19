@@ -31,8 +31,9 @@ li {
   font-size: 1.3em;
   float: left;
   height:50%;
-  width:50%;
+  width:40%;
   margin-top: 10%;
+  margin-left:5%;
 }
 
 #rightside {
@@ -42,8 +43,9 @@ li {
   font-size: 1.3em;
   float:right;
   height:50%;
-  width:50%;
+  width:40%;
   margin-top: 10%;
+  margin-right:5%;
 }
 
 h1{
@@ -53,10 +55,21 @@ h1{
 }
 
 .new-burger{
-  height:20%;
-  width:20%;
+  height:50%;
+  width:50%;
   background-color: limegreen;
   text-align: center;
   justify-content: center;
-  margin-left:40%;
+  margin-left:25%;
+  padding:30px;
+}
+
+#burger{
+  padding:15px;
+}
+
+#addBurger{
+  height:15%;
+  width:30%;
+  padding:15px;
 }

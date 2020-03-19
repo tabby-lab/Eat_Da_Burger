@@ -1,26 +1,45 @@
+<div class="background">
 <h1>EAT-DA-BURGER!</h1>
+<iframe src="https://giphy.com/embed/26gJyPArz29MiOYSI" width="100%" height="70%"></iframe>
+  <div>
 
-<h2>Burgers!</h2>
+    <input type="text" id="burger">
+    <button id="addBurger">new burger</button>
+  </div>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devour}}
-      {{> burgers/burger-block devours=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
 
-<h2>Burgers that have been devoured!</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="leftside">
+        <h2>Burgers!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devour}}
+        <ul>
+          {{#each burgers}}
+          {{#unless devour}}
+          {{> burgers/burger-block devours=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-sm-6">
+  <div id="rightside">
+    <h2>Burgers that have been devoured!</h2>
+
+    <ul>
+      {{#each burgers}}
+      {{#if devour}}
       {{> burgers/burger-block devours=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+      {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
+</div>
 
-<input type="text" id="burger">
-<button id="addBurger">new burger</button>
 
- 
